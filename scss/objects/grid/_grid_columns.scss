@@ -1,0 +1,157 @@
+
+//----------------------------------------------------------------------------
+// Layout Columns
+//----------------------------------------------------------------------------
+
+[class^=grid_col]{
+    @include make-col();
+}
+
+
+
+@include mq-breakpoint-upto($exsm) {
+
+	[class^=grid_col_exsm]{
+        float: left;
+	}
+
+    [class^=grid_col_exsm] [class^=grid_col]{
+        margin-bottom: 0;
+    }
+	
+	@for $i from 1 through $columns {
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_col_exsm-#{$i}_#{$columns} {
+           width: $val;
+            @if $i == $columns {
+        		float: none;
+        	}
+        }
+    }
+
+}// END EXTRA SMALL BREAKPOINT
+
+
+@include mq-breakpoint-upto($sm) {
+
+    [class^=grid_col_sm]{
+        float: left;
+    }
+
+    [class^=grid_col_sm] [class^=grid_col]{
+        margin-bottom: 0;
+    }
+	
+	@for $i from 1 through $columns {
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_col_sm-#{$i}_#{$columns} {
+           width: $val;
+            @if $i == $columns {
+        		float: none;
+        	}
+        }
+    }
+
+}//END SMALL BREAKPOINT
+
+@include mq-breakpoint-upto($med) {
+
+    [class^=grid_col_med]{
+        float: left;
+    }
+
+    [class^=grid_col_med] [class^=grid_col]{
+        margin-bottom: 0;
+    }
+
+    @for $i from 1 through $columns {
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_col_med-#{$i}_#{$columns} {
+           width: $val;
+            @if $i == $columns {
+        		float: none;
+        	}
+        }
+    }
+
+}//END MEDIUM BREAKPOINT
+
+
+
+@include mq-breakpoint-upto($lg) {
+
+    [class^=grid_col_lg]{
+        float: left;
+    }
+
+    [class^=grid_col_lg] [class^=grid_col]{
+        margin-bottom: 0;
+    }
+
+	@for $i from 1 through $columns {
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_col_lg-#{$i}_#{$columns} {
+            width: $val;
+            @if $i == $columns {
+        		float: none;
+        	}
+        }
+    }
+
+}// END LARGE BREAKPOINT
+
+
+
+//----------------------------------------------------------------------------
+// Content Columns
+//----------------------------------------------------------------------------
+
+
+@include mq-breakpoint-upto($exsm) {
+    @for $i from 1 through $columns {
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_col_exsm-1_#{$columns - $i + 1} {
+            width: (100% / ($columns - $i + 1) );
+            @if $i == $columns { float: none; }
+        }
+    }
+}
+
+
+@include mq-breakpoint-upto($sm) {
+    @for $i from 1 through $columns {
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_col_sm-1_#{$columns - $i + 1} {
+            width: (100% / ($columns - $i + 1) );
+            @if $i == $columns { float: none; }
+        }
+    }
+}
+
+@include mq-breakpoint-upto($med) {
+    @for $i from 1 through $columns {
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_col_med-1_#{$columns - $i + 1} {
+            width: (100% / ($columns - $i + 1) );
+            @if $i == $columns { float: none; }
+        }
+    }
+}
+
+@include mq-breakpoint-upto($lg) {
+    @for $i from 1 through $columns {
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_col_lg-1_#{$columns - $i + 1} {
+            width: (100% / ($columns - $i + 1) );
+            @if $i == $columns { float: none; }
+        }
+    }
+}

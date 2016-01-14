@@ -1,0 +1,48 @@
+
+.custom_container{
+	@include make-container(width);
+}
+
+.custom_row{
+	@include make-row();
+}
+
+.custom_row_nested{
+	@include make-row(nested);
+}
+
+.custom_col{
+    //background-color: gray;
+    @include make-col();
+    @include make-col-span(18, 18);
+
+    @include mq-breakpoint-upto($sm) {
+        @include make-col-span(9, 18, float);
+
+    }
+
+    @include mq-breakpoint-upto($med) {
+        @include make-col-span(3, 18);
+    }
+}
+
+.custom_col-main{
+	//background-color: gray;
+	@include make-col();
+    @include make-col-span(12, 12);
+
+    @include mq-breakpoint-upto($sm) {
+        @include make-col-span(8, 12, float);
+    }
+}
+
+.custom_col-side{
+	//background-color: red;
+
+	@include make-col();
+    @include make-col-span(12, 12);
+
+    @include mq-breakpoint-upto($sm) {
+        @include make-col-span(4, 12, float);
+    }
+}

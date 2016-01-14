@@ -1,0 +1,23 @@
+
+//---------------------------------------------------------------------------
+// Base Styles
+//----------------------------------------------------------------------------
+
+.container, .container-full{
+    @include make-container();
+}
+
+.container{
+    max-width: $container-width;
+}
+
+
+.grid_row{
+    @include make-row();
+}
+
+
+.grid_row .grid_row{
+    margin-bottom: (-$margin-bottom);    
+}
+

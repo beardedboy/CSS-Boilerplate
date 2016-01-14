@@ -1,0 +1,148 @@
+
+// ----------------------------------------------------------------------------
+// Layout grid_Offset Columns
+// ----------------------------------------------------------------------------
+
+
+@include mq-breakpoint-upto($exsm) {
+    
+    @for $i from 1 through ($columns - 1) {
+        
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_offset_exsm-#{$i}_#{$columns} {
+            margin-left: $val;
+        }
+
+    }
+
+}
+
+
+@include mq-breakpoint-upto($sm) {
+    
+    @for $i from 1 through ($columns - 1) {
+        
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_offset_sm-#{$i}_#{$columns} {
+            margin-left: $val;
+        }
+
+    }
+
+}
+
+
+@include mq-breakpoint-upto($med) {
+
+    @for $i from 1 through ($columns - 1) {
+        
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_offset_med-#{$i}_#{$columns} {
+            margin-left: $val;
+        }
+    }
+
+}
+
+@include mq-breakpoint-upto($lg) {
+    
+    @for $i from 1 through ($columns - 1) {
+        
+        $val: ( 100% / $columns ) * $i;
+
+        .grid_offset_lg-#{$i}_#{$columns} {
+            margin-left: $val;
+        }
+    }
+
+}
+
+
+// ----------------------------------------------------------------------------
+// Content Offset Columns
+// ----------------------------------------------------------------------------
+
+
+@include mq-breakpoint-upto($exsm) {
+    $i: $columns;
+
+    @while $i > 1 {
+
+        @for $j from 1 through $i - 1 {
+
+            $margin: ( 100% / $i ) * $j;
+
+            .grid_offset_extsm-#{$j}_#{$i} {
+                margin-left: $margin;
+            }
+        } //END FOR
+
+        $i: $i - 1;
+
+    } //END WHILE 
+}
+
+
+@include mq-breakpoint-upto($sm) {
+    $i: $columns;
+
+    @while $i > 1 {
+
+        @for $j from 1 through $i - 1 {
+
+            $margin: ( 100% / $i ) * $j;
+
+            .grid_offset_sm-#{$j}_#{$i} {
+                margin-left: $margin;
+            }
+        } //END FOR
+
+        $i: $i - 1;
+
+    } //END WHILE 
+}
+
+
+
+@include mq-breakpoint-upto($med) {
+
+    $i: $columns;
+
+    @while $i > 1 {
+
+        @for $j from 1 through $i - 1 {
+
+            $margin: ( 100% / $i ) * $j;
+
+            .grid_offset_med-#{$j}_#{$i} {
+                margin-left: $margin;
+            }
+        } //END FOR
+
+        $i: $i - 1;
+
+    } //END WHILE 
+
+}
+
+@include mq-breakpoint-upto($lg) {
+    $i: $columns;
+
+    @while $i > 1 {
+
+        @for $j from 1 through $i - 1 {
+
+            $margin: ( 100% / $i ) * $j;
+
+            .grid_offset_lg-#{$j}_#{$i} {
+                margin-left: $margin;
+            }
+        } //END FOR
+
+        $i: $i - 1;
+
+    } //END WHILE 
+}

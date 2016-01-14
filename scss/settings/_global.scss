@@ -1,0 +1,23 @@
+/**
+ * settings/_global.scss
+ */
+
+ /* ==========================================================================
+   Globals
+   ========================================================================== */
+
+
+//maximum width of container element, can be set to 100% if you want full screen.
+$container-width: 71.5em;
+
+$ratio: 1.618;
+
+//Adds unit measurement to $ratio value.
+$margin-side: ($ratio / 2) + em;
+$margin-bottom: $ratio + em;
+
+//Breakpoint values
+$exsm:	 	25em;
+$sm: 		31.25em;
+$med: 		50em;
+$lg: 		62.5em;

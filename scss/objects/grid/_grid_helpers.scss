@@ -1,0 +1,72 @@
+
+// ---------------------------------------------------------------------------
+// Grid_Offset Column Resets
+//----------------------------------------------------------------------------
+
+@include mq-breakpoint-upto($exsm) {
+    .grid_offset_exsm-reset{
+        margin-left: 0;
+    }
+}
+
+@include mq-breakpoint-upto($sm) {
+    .grid_offset_sm-reset{
+        margin-left: 0;
+    }
+}
+
+
+@include mq-breakpoint-upto($med) {
+    .grid_offset_med-reset{
+        margin-left: 0;
+    }
+}
+
+@include mq-breakpoint-upto($lg) {
+    .grid_offset_lg-reset{
+        margin-left: 0;
+    }
+}
+
+// ----------------------------------------------------------------------------
+// Grid Helper Classes
+// ----------------------------------------------------------------------------
+
+
+@include mq-breakpoint-upto($exsm) {
+    .grid_col_exsm-clear_float{
+      clear: both;
+    }
+    .grid_col_exsm-reset_float{
+      clear: none;
+    }
+}
+
+@include mq-breakpoint-upto($sm) {
+    .grid_col_sm-clear_float{
+      clear: both;
+    }
+    .grid_col_sm-reset_float{
+      clear: none;
+    }
+}
+
+
+@include mq-breakpoint-upto($med) {
+    .grid_col_med-clear_float{
+      clear: both;
+    }
+
+    .grid_col_med-reset_float{
+      clear: none;
+    }
+}
+
+@include mq-breakpoint-upto($lg) {
+    .grid_col_lg-clear_float{
+      clear: both;
+    }
+    .grid_col_lg-reset_float{
+      clear: none;
+    }
+}
