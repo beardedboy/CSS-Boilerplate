@@ -7,36 +7,53 @@ module.exports = function(grunt) {
         sass: {
             dist: {                            // Target
                 options: {                      // Target options
-                    style: 'expanded'
+                    style: 'expanded',
+                   sourcemap: 'none'
                 },
                 files: {                         // Dictionary of files
-                    'css/grid.css': 'scss/grid.scss'
+                    'css/src/main.css': 'scss/main.scss'
                 }
 
             }
         },
-        autoprefixer: {
+
+        cssnano: {
             options: {
-                // Task-specific options go here.
+                sourcemap: false
             },
-            your_target: {
-                // Target-specific file lists and/or options go here.
-            },
+            dist: {
+                files: {
+                    'css/dist/main.min.css': 'css/src/main.css'
+                }
+            }
         },
 
-        cssmin: {
-            target: {
-                files: {
-                    'css/grid.min.css': ['css/grid.css']
-                }
+        postcss: {
+            options: {
+                map: {
+                    inline: false, // save all sourcemaps as separate files...
+                    annotation: 'css/dist' // ...to the specified directory
+                },
+
+                processors: [
+                    //require('cssnano')()
+                    require('pixrem')(), // add fallbacks for rem units
+                    require('autoprefixer')({
+                        browsers: ['not ie < 8']
+                    })
+                ]
+            },
+            dist: {
+                src: 'css/src/*.css'
             }
         },
         watch: {
             sass: {
-                files: 'scss/partials/*.scss',
-                tasks: ['sass','autoprefixer','cssmin'],
+                files: 'scss/**/*.scss',
+                tasks: ['sass', 'postcss:dist', 'cssnano'],
                 options: {
-                    spawn: false,
+                    livereload: true,
+                    spawn: false
                 }
             }
         },
@@ -45,10 +62,11 @@ module.exports = function(grunt) {
 
     // 3. Where we tell Grunt we plan to use this plug-in.
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-cssnano');
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-autoprefixer');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin']);
+
+    grunt.registerTask('default', ['sass', 'postcss:dist', 'cssnano']);
 };

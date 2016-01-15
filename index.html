@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grid</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/vendor/modernizr-custom.js"></script>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/dist/main.min.css">
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class = "container">
+            <h3 class = "pres-heading">Layout Columns</h3>
+            <div class = "grid_row">
+                <div class = "grid_col_exsm-12_12"><h3>12-12</h3></div>
+            </div>
+            <div class = "grid_row">
+                <div class = "grid_col_exsm-12_12"><h3>12-12</h3></div>
+            </div>
+            <div class = "grid_row">
+                <div class = "grid_col_exsm-1_12"><h3>1-12</h3></div>
+                <div class = "grid_col_exsm-11_12"><h3>11-12</h3></div>
+            </div>
+            <div class = "grid_row">
+                <div class = "grid_col_exsm-2_12"><h3>2-12</h3></div>
+                <div class = "grid_col_exsm-10_12"><h3>10-12</h3></div>
+            </div>
+            <div class = "grid_row">
+                <div class = "grid_col_med-6_12 grid_col_lg-3_12">
+                <h3>exsm 3-12 lg 6-12 1 POTATO</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis est est, lobortis cursus enim placerat vel. Morbi sagittis eu ante vehicula bibendum. Vivamus sit amet ipsum ac ligula fermentum euismod eu sit amet sem. Sed in arcu maximus, aliquet tellus blandit, laoreet lorem. Morbi sed maximus odio. Duis sed orci sem. In urna nibh, tempor non interdum at, egestas porta lorem. Mauris vel lacus viverra sem luctus tristique. Nam aliquet tempus libero ac iaculis. Maecenas et sapien sit amet nibh gravida blandit. Maecenas quis porta turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dictum imperdiet condimentum. In et tincidunt lorem, non suscipit felis.</p>
+                </div>
+                <div class = "grid_col_med-6_12 grid_col_lg-3_12"><h3>exsm 3-12 lg 6-12 2</h3></div>
+                <div class = "grid_col_med-6_12 grid_col_med-clear_float grid_col_lg-3_12 grid_col_lg-reset_float"><h3>exsm 3-12 lg 6-12 3</h3></div>
+                <div class = "grid_col_med-6_12 grid_col_lg-3_12"><h3>exsm 3-12 lg 6-12 4</h3></div>
+              
+            </div>
+            <div class = "grid_row">
+                <div class = "grid_col_exsm-4_12 grid_col_push_lg-8"><h3>4-12</h3></div>
+                <div class = "grid_col_exsm-8_12 grid_col_pull_lg-4"><h3>8-12</h3></div>
+            </div>
+            <div class = "grid_row">
+                <div class = "grid_col_exsm-5_12"><h3>5-12</h3></div>
+                <div class = "grid_col_exsm-7_12">
+                    <div class = "grid_row">
+                        <div class = "grid_col_exsm-4_12"><h3>Nested 4-12</h3></div>
+                        <div class = "grid_col_exsm-8_12"><h3>Nested 8-12</h3></div>
+                    </div>
+                </div>
+            </div>
+            <div class = "grid_row">
+                <div class = "grid_col_exsm-6_12"><h3>6-12</h3></div>
+                <div class = "grid_col_exsm-6_12"><h3>6-12</h3></div>
+            </div>
+            <div class = "grid_row">
+<div class = "grid_col_sm-1_2 grid_col_lg-1_4"><h3>6-12</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis est est, lobortis cursus enim placerat vel. Morbi sagittis eu ante vehicula bibendum. Vivamus sit amet ipsum ac ligula fermentum euismod eu sit amet sem. Sed in arcu maximus, aliquet tellus blandit, laoreet lorem. Morbi sed maximus odio. Duis sed orci sem. In urna nibh, tempor non interdum at, egestas porta lorem. Mauris vel lacus viverra sem luctus tristique. Nam aliquet tempus libero ac iaculis. Maecenas et sapien sit amet nibh gravida blandit. Maecenas quis porta turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dictum imperdiet condimentum. In et tincidunt lorem, non suscipit felis</p></div>
+<div class = "grid_col_sm-1_2 grid_col_lg-1_4"><h3>6-12</h3></div>
+<div class = "grid_col_sm-1_2 grid_col_sm-clear_float grid_col_lg-1_4 grid_col_lg-reset_float"><h3>6-12</h3></div>
+<div class = "grid_col_sm-1_2 grid_col_lg-1_4"><h3>6-12</h3></div>
+</div>
+        </div>
+
+        <div class = "container-full">
+            <div class = "grid_row">
+                <div class = "grid_col_exsm-12_12"><h3>Full Width Container</h3></div>
+            </div>
+        </div>
+
+        <div class = "container">
+            <h3 class = "pres-heading">Content Columns</h3>
+
+            <div class = "grid_row">
+                <div class = "grid_col_sm-1_2 grid_col_med-1_3 grid_col_lg-1_6"><h3>1-6</h3></div>
+                <div class = "grid_col_sm-1_2 grid_col_med-1_3 grid_col_lg-1_6"><h3>1-6</h3></div>
+                <div class = "grid_col_sm-1_2 grid_col_med-1_3 grid_col_lg-1_6"><h3>1-6</h3></div>
+                <div class = "grid_col_sm-1_2 grid_col_med-1_3 grid_col_lg-1_6"><h3>1-6</h3></div>
+                <div class = "grid_col_sm-1_2 grid_col_med-1_3 grid_col_lg-1_6"><h3>1-6</h3></div>
+                <div class = "grid_col_sm-1_2 grid_col_med-1_3 grid_col_lg-1_6"><h3>1-6</h3></div>
+            </div>
+            <div class = "grid_row">
+                <div class = "grid_col_sm-1_2 grid_col_med-1_3 grid_col_lg-1_4"><h3>1-4</h3></div>
+                <div class = "grid_col_sm-1_2 grid_col_med-1_3 grid_col_lg-1_4"><h3>1-4</h3></div>
+                <div class = "grid_col_sm-1_2 grid_col_med-1_3 grid_col_lg-1_4"><h3>1-4</h3></div>
+                <div class = "grid_col_sm-1_2 grid_col_med-1_3 grid_col_lg-1_4"><h3>1-4</h3></div>
+            </div>
+            <div class = "grid_row">
+                <div class = "grid_col_sm-1_6 grid_offset_sm-2_6  grid_col_lg-1_2 grid_offset_lg-reset"><h3>1-6</h3></div>
+                <div class = "grid_col_sm-1_6 grid_col_lg-1_2"><h3>1-6</h3></div>
+            </div>
+        </div>
+
+        <div class = "custom_container">
+            <div class = "custom_row">
+                <div class = "custom_col-main">Custom Column Main</div>
+                <div class = "custom_col-side">
+                    <div class = "custom_row_nested">
+                        <div class = "custom_col-main">Custom Column Main-nested</div>
+                        <div class = "custom_col-side">Custom Column Side-nested</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Use this option if you want to use JS to polyfill for IE6-8 support -->
+
+        <!--[if lte IE 8]>
+            <script src="js/vendor/respond.min.js"></script>
+        <![endif]-->
+
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </body>
+</html>

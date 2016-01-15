@@ -7,6 +7,8 @@ A boilerplate css structure to be used as a base for new web projects
 
 <strong>Contains:</strong> <a href="https://github.com/beardedboy/Grid">Grid</a>, <a href="#">Normalize.css</a>
 
+###Folder Structure
+
 <b>Settings:</b> Global variables config switches (colours, screen sizes)</br>
 <b>Tools:</b>  Functions and mixins</br>
 <b>Generic:</b>  Ground-zero styles (normalize/reset.css, box-sizing)</br>

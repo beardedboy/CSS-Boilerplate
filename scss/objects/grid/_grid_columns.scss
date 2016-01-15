@@ -5,6 +5,7 @@
 
 [class^=grid_col]{
     @include make-col();
+    background-color: yellow;
 }
 
 
