@@ -1,6 +1,9 @@
 module.exports = function(grunt) {
 
     // 1. All configuration goes here 
+
+    require('time-grunt')(grunt);
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -36,7 +39,6 @@ module.exports = function(grunt) {
                 },
 
                 processors: [
-                    //require('cssnano')()
                     require('pixrem')(), // add fallbacks for rem units
                     require('autoprefixer')({
                         browsers: ['not ie < 8']
