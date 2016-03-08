@@ -20,7 +20,9 @@ A boilerplate css structure to be used as a base for new web projects
 
 ###Rules
 
-Prefix Javascript hook classes with 'js-' for readability.
-Prefix classes that alter the state of a visual component with 'is-' eg. '.is-visible, .is-hidden' for greater readability.
+<ul>
+<li>Prefix Javascript hook classes with 'js-' for readability.</li>
+<li>Prefix classes that alter the state of a visual component with 'is-' eg. '.is-visible, .is-hidden' for greater readability.</li>
+</ul>
 
 <b>Credit: </b><a href="http://philipwalton.com/articles/decoupling-html-css-and-javascript/">Decoupling Your HTML, CSS, and JavaScript</a>
