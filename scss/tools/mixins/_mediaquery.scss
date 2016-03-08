@@ -9,8 +9,14 @@
 
 // Mixins for Media Query Breakpoints
 
-@mixin mq-breakpoint-upto($size) {
-	@media screen and (min-width: $size) {
+@mixin mq-breakpoint-upto($minWidth) {
+	@media screen and (min-width: $minWidth) {
+		@content;
+	}
+}
+
+@mixin mq-breakpoint-between($minWidth, $maxWidth) {
+	@media screen and (min-width: $minWidth) and (max-width: $maxWidth) {
 		@content;
 	}
 }
