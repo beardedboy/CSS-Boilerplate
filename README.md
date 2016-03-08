@@ -5,7 +5,7 @@ A boilerplate css structure to be used as a base for new web projects
 
 <strong>Uses:</strong> CSS, <a href="http://sass-lang.com/">SCSS</a>, BEM, <a href="http://itcss.io/">ITCSS</a>
 
-<strong>Contains:</strong> <a href="https://github.com/beardedboy/Grid">Grid</a>, <a href="#">Normalize.css</a>
+<strong>Dependencies:</strong> <a href="https://github.com/beardedboy/Grid">Grid</a>, <a href="http://github.com/necolas/normalize.css">Normalize.css</a>
 
 ###Folder Structure
 
@@ -17,3 +17,10 @@ A boilerplate css structure to be used as a base for new web projects
 <b>Components:</b>  Styled objects, chunks of UI</br>
 <b>Theme:</b>  Optional</br>
 <b>Trumps:</b>  Helpers and overrides, e.g. .float-left { float:left !important;}</br>
+
+###Rules
+
+Prefix Javascript hook classes with 'js-' for readability.
+Prefix classes that alter the state of a visual component with 'is-' eg. '.is-visible, .is-hidden' for greater readability.
+
+<b>Credit: </b><a href="http://philipwalton.com/articles/decoupling-html-css-and-javascript/">Decoupling Your HTML, CSS, and JavaScript</a>

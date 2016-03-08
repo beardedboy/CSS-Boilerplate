@@ -5,29 +5,28 @@
 
 [class^=grid_col]{
     @include make-col();
-    background-color: yellow;
 }
 
 
 
 @include mq-breakpoint-upto($exsm) {
 
-	[class^=grid_col_exsm]{
+    [class^=grid_col_exsm]{
         float: left;
-	}
+    }
 
     [class^=grid_col_exsm] [class^=grid_col]{
         margin-bottom: 0;
     }
-	
-	@for $i from 1 through $columns {
+    
+    @for $i from 1 through $columns {
         $val: ( 100% / $columns ) * $i;
 
         .grid_col_exsm-#{$i}_#{$columns} {
            width: $val;
             @if $i == $columns {
-        		float: none;
-        	}
+                float: none;
+            }
         }
     }
 
@@ -43,15 +42,15 @@
     [class^=grid_col_sm] [class^=grid_col]{
         margin-bottom: 0;
     }
-	
-	@for $i from 1 through $columns {
+    
+    @for $i from 1 through $columns {
         $val: ( 100% / $columns ) * $i;
 
         .grid_col_sm-#{$i}_#{$columns} {
            width: $val;
             @if $i == $columns {
-        		float: none;
-        	}
+                float: none;
+            }
         }
     }
 
@@ -73,8 +72,8 @@
         .grid_col_med-#{$i}_#{$columns} {
            width: $val;
             @if $i == $columns {
-        		float: none;
-        	}
+                float: none;
+            }
         }
     }
 
@@ -92,14 +91,14 @@
         margin-bottom: 0;
     }
 
-	@for $i from 1 through $columns {
+    @for $i from 1 through $columns {
         $val: ( 100% / $columns ) * $i;
 
         .grid_col_lg-#{$i}_#{$columns} {
             width: $val;
             @if $i == $columns {
-        		float: none;
-        	}
+                float: none;
+            }
         }
     }
 
