@@ -1,12 +1,10 @@
 /**
- * tools/_main.scss
+ * tools/mixins/_animations.scss
  */
 
 /* ==========================================================================
-   Imports
+   Animation Mixins
    ========================================================================== */
 
-@import "mixins/_clearfix";
-@import "mixins/_grid";
-@import "mixins/_mediaquery";
-@import "mixins/_animations";
+
+// Mixins for Animation Breakpoints
