@@ -26,3 +26,13 @@ Prefix classes that alter the state of a visual component with 'is-' eg. '.is-vi
 
 
 <b>Credits: </b><a href="http://philipwalton.com/articles/decoupling-html-css-and-javascript/">Decoupling Your HTML, CSS, and JavaScript</a>
+
+
+##Features / Issues to fix
+
+The current list of ongoing issues to fix or new features to add are:
+
+<ul>
+<li>Create more structured example page</li>
+<li>Populate tools with useful mixins, eg. for CSS animations and images</li>
+</ul>
