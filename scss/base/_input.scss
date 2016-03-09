@@ -6,4 +6,30 @@
    Input
    ========================================================================== */
 
-   input{}
+   	form{}
+
+	input{}
+
+	input[type="text"] {}
+	input[type="checkbox"] {}
+	input[type="radio"] {}
+	input[type="file"] {}
+	input[type="password"] {}
+	input[type="image"] {}
+	input[type="submit"] {}
+	input[type="button"] {}
+
+	textarea{}
+
+	//HTML5 only
+
+	input[type="email"] {}
+	input[type="search"] {}
+	input[type="color"] {}
+	input[type="time"] {}
+	input[type="week"] {}
+	input[type="month"] {}
+	input[type="number"] {}
+	input[type="range"] {}
+	input[type="tel"] {}
+	input[type="url"] {}

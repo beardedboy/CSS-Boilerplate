@@ -7,6 +7,7 @@
    ========================================================================== */
 
 
+// Positioning Helpers
 .float-left{
 	float: left !important;
 }
@@ -14,3 +15,17 @@
 .float-right{
 	float: right !important;
 }
+
+
+
+// Visibility Helpers
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+ 

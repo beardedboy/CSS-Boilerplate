@@ -526,6 +526,12 @@ li {
   list-style-type: none;
 }
 
+/**
+ * base/_input.scss
+ */
+/* ==========================================================================
+ Input
+ ========================================================================== */
 /* ==========================================================================
    Objects
    ========================================================================== */
@@ -2782,6 +2788,18 @@ li {
 
 .float-right {
   float: right !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=../dist/main.css.map */
