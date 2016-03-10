@@ -62,11 +62,17 @@ module.exports = function(grunt) {
 
     });
 
-    // 3. Where we tell Grunt we plan to use this plug-in.
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-cssnano');
-    grunt.loadNpmTasks('grunt-postcss');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    var modules = [
+        'grunt-contrib-sass',
+        'grunt-cssnano',
+        'grunt-postcss',
+        'grunt-contrib-watch'
+    ];
+
+    modules.forEach(function(task){
+        grunt.loadNpmTasks(task);
+    });
+
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 
