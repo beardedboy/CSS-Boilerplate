@@ -19,18 +19,6 @@ module.exports = function(grunt) {
 
             }
         },
-
-        cssnano: {
-            options: {
-                sourcemap: false
-            },
-            dist: {
-                files: {
-                    'css/dist/main.min.css': 'css/src/main.css'
-                }
-            }
-        },
-
         postcss: {
             options: {
                 map: {
@@ -47,6 +35,16 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: 'css/src/*.css'
+            }
+        },
+        cssnano: {
+            options: {
+                sourcemap: false
+            },
+            dist: {
+                files: {
+                    'css/dist/main.min.css': 'css/src/main.css'
+                }
             }
         },
         watch: {
